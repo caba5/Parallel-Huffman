@@ -43,3 +43,10 @@ For the *FastFow* version, with *commedia200.txt* as input file and 16 worker th
 ```
 ./ff commedia200.txt 16
 ```
+
+The verification process for testing the correctness of the parallel compression (through decompression) is made by invoking the commands above followed by a ```v``` flag. 
+The output of the command is the decompressed version of the file to ```stderr```.
+Example of invocation:
+```
+./par commedia200.txt 16 v 2> /dev/null
+```
